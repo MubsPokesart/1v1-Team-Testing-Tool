@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/staticfiles/stylesheets/style.css">
+    <title>1v1 Team Testing Tool</title>
+</head>
+<body>
+    <form class="monInfo">
+        <div id="recurringInfo" class="recurringInfo">
+            <div class="battle">
+                <div class="innerbattle">
+                <div class="backdrop" style="background-image:url(https://play.pokemonshowdown.com/sprites/gen6bgs/bg-forest.jpg);display:block;opacity:0.8"></div>
+                <div>
+                    <div id="yourTeam"></div>
+                    <div id="opponentTeam"></div>
+                </div>
+                <div role="complementary" aria-label="Active Pokemon"></div>
+                <div class="leftbar" role="complementary" aria-label="Your Team">
+                    <div class="trainer trainer-near">
+                        <strong>You</strong>
+                        <div class="trainersprite" title="Rating: 3500" style="background-image:url(https://play.pokemonshowdown.com/sprites/trainers/unknown.png)"></div>
+                        <div id="yourIcons" class="teamicons"></div>
+                        <div class="teamicons">
+                            <span class="picon" style="background:transparent url(https://play.pokemonshowdown.com/sprites/pokemonicons-pokeball-sheet.png) no-repeat scroll -80px 4px"></span>
+                            <span class="picon" style="background:transparent url(https://play.pokemonshowdown.com/sprites/pokemonicons-pokeball-sheet.png) no-repeat scroll -80px 4px"></span>
+                            <span class="picon" style="background:transparent url(https://play.pokemonshowdown.com/sprites/pokemonicons-pokeball-sheet.png) no-repeat scroll -80px 4px"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightbar" role="complementary" aria-label="Opponent's Team">
+                    <div class="trainer trainer-far">
+                        <strong>???</strong>
+                        <div class="trainersprite" title="Rating: 90210" style="background-image:url(https://play.pokemonshowdown.com/sprites/trainers/unknown.png)"></div>
+                        <div id="opponentIcons" class="teamicons"></div>
+                        <div class="teamicons">
+                            <span class="picon" style="background:transparent url(https://play.pokemonshowdown.com/sprites/pokemonicons-pokeball-sheet.png) no-repeat scroll -80px 4px"></span>
+                            <span class="picon" style="background:transparent url(https://play.pokemonshowdown.com/sprites/pokemonicons-pokeball-sheet.png) no-repeat scroll -80px 4px"></span>
+                            <span class="picon" style="background:transparent url(https://play.pokemonshowdown.com/sprites/pokemonicons-pokeball-sheet.png) no-repeat scroll -80px 4px"></span>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div id="previewAnalysis" class="analysis-preview">
+                <table id="monGrid">
+                    <tr>
+                        <td></td>
+                        <td id="opponentMonGrid" class="opponentMonGrid">OppMon1</td>
+                        <td id="opponentMonGrid" class="opponentMonGrid">OppMon2</td>
+                        <td id="opponentMonGrid" class="opponentMonGrid">OppMon3</td>
+                    </tr>
+                    <tr id="monBox">
+                        <td id="yourNames">Mon1</td>
+                        <td><input type="checkbox" name="side1[]" value="unshifted"></td>
+                        <td><input type="checkbox" name="side1[]" value="unshifted"></td>
+                        <td><input type="checkbox" name="side1[]" value="unshifted"></td>
+                    </tr>
+                    <tr id="monBox">
+                        <td id="yourNames">Mon2</td>
+                        <td><input type="checkbox" name="side2[]" value="unshifted"></td>
+                        <td><input type="checkbox" name="side2[]" value="unshifted"></td>
+                        <td><input type="checkbox" name="side2[]" value="unshifted"></td>
+                    </tr>
+                    <tr id="monBox">
+                        <td id="yourNames">Mon3</td>
+                        <td><input type="checkbox" name="side3[]" value="unshifted"></td>
+                        <td><input type="checkbox" name="side3[]" value="unshifted"></td>
+                        <td><input type="checkbox" name="side3[]" value="unshifted"></td>
+                    </tr>
+                </table>
+                <button type="submit" id="submitEntry">Submit Entry</button>
+            </div>
+        </div>
+    
+        <div id="staticInfo" class="staticInfo">
+            <button type="submit" id="submitForm">Submit Form</button>
+        </div>
+
+    </form>
+    
+    </body>
+    <script src="src\staticfiles\scripts\process.js" type="module"></script>
+</html>

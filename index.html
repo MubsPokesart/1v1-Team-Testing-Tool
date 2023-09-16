@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1v1 Team Testing Tool</title>
+</head>
+<body>    
+    <h1>1v1 Team Testing Tool, by Mubs</h1>    
+    <form name="monForm" id="monForm">
+        <h2>Your Team</h2>
+            <textarea id="teamPaste" name="teamPaste" placeholder="Your Team Paste" cols="50" rows="10"></textarea>
+            <p>
+                Gen:
+                <select id="gens" name="gen">
+                    <option value="9">Gen 9</option>
+                    <option value="8">Gen 8</option>
+                    <option value="7">Gen 7</option>
+                    <option value="6">Gen 6</option>
+                    <option value="5">Gen 5</option>
+                    <option value="4">Gen 4</option>
+                    <option value="3">Gen 3</option>
+                </select>
+            </p>
+        <h2>Opponent Information</h2>
+        <p>
+            Filter by Nicknnames (optional, seperate by commas):
+            <input type="text" id="usernameFilter" name="usernameFilter" placeholder="Enter Names">
+        </p>
+        <p>
+            <input type="checkbox" id="megathreadReplays">
+            <label for="megathreadReplays" style="text-align: center">Megathread Replays</label>
+        </p>
+
+        <div id="megathreadReplaysPaste" name="megathreadReplaysPaste" style="display: none;">
+            <input type="checkbox" id="megathreadReplays-pl7" name="megathreadReplays" value="PL7" checked>
+            <label for="megathreadReplays-pl7">PL VII</label>
+          
+            <input type="checkbox" id="megathreadReplays-ogpl1" name="megathreadReplays" value="OGPL1" checked>
+            <label for="megathreadReplays-ogpl1">OGPL I</label>
+          
+            <input type="checkbox" id="megathreadReplays-wc6" name="megathreadReplays" value="WC6">
+            <label for="megathreadReplays-wc6">WC VI</label>
+          
+            <input type="checkbox" id="megathreadReplays-pl6" name="megathreadReplays" value="PL6">
+            <label for="megathreadReplays-pl6">PL VI</label>
+          
+            <input type="checkbox" id="megathreadReplays-wc5" name="megathreadReplays" value="WC5">
+            <label for="megathreadReplays-wc5">WC V</label>
+          
+            <input type="checkbox" id="megathreadReplays-pl5" name="megathreadReplays" value="PL5">
+            <label for="megathreadReplays-pl5">PL V</label>
+          
+            <input type="checkbox" id="megathreadReplays-wc4" name="megathreadReplays" value="WC4">
+            <label for="megathreadReplays-wc4">WC IV</label>
+          
+            <input type="checkbox" id="megathreadReplays-pl4" name="megathreadReplays" value="PL4">
+            <label for="megathreadReplays-pl4">PL IV</label>
+          
+            <input type="checkbox" id="megathreadReplays-wc3" name="megathreadReplays" value="WC3">
+            <label for="megathreadReplays-wc3">WC III</label>
+          
+            <input type="checkbox" id="megathreadReplays-pl3" name="megathreadReplays" value="PL3">
+            <label for="megathreadReplays-pl3">PL III</label>
+          
+            <input type="checkbox" id="megathreadReplays-wc2" name="megathreadReplays" value="WC2">
+            <label for="megathreadReplays-wc2">WC II</label>
+          
+            <input type="checkbox" id="megathreadReplays-pl2" name="megathreadReplays" value="PL2">
+            <label for="megathreadReplays-pl2">PL II</label>
+          
+            <input type="checkbox" id="megathreadReplays-wc1" name="megathreadReplays" value="WC1">
+            <label for="megathreadReplays-wc1">WC I</label>
+
+            <input type="checkbox" id="megathreadReplays-wc1" name="megathreadReplays" value="PL1">
+            <label for="megathreadReplays-wc1">PL I</label>
+
+        </div>
+
+        <p>
+            <input type="checkbox" id="customReplays">
+            <label for="customReplays" style="text-align: center">Custom Replays</label>
+        </p>
+
+        <div id="specificReplaysBox"  name="specificReplaysBox" style="display: none">
+            <textarea id="specificReplaysPaste" name="specificReplaysPaste" placeholder="Input your replays" cols="50" rows="10"></textarea>
+        </div>
+
+        <input type="submit" id='submit' value="submit">
+    </form>
+
+    <script src="src\staticfiles\scripts\index.js" type="module"></script>
+</body>
+</html>
