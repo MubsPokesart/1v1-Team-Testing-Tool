@@ -1,2 +1,30 @@
-# 1v1-Team-Testing-Tool
-A 1v1 Team Testing tool that utilizes HTML/CSS/JS alongside a NodeJS + Express Backend
+# 1v1 Team Testing Tool
+
+A form-based single-page web application intended for testing use by players of [Smogon's 1v1 format](https://www.smogon.com/dex/sv/formats/1v1/). Supports all generations.
+
+## Technologies Used
+
+```sh
+Frontend: JavaScript, HTML, CSS
+Backend: NodeJS (with Express)
+Libraries: regex, esm, fs
+```
+
+Usage of [pkmn/ps libraries](https://github.com/pkmn/ps/blob/master/img) is also included in this project.  
+
+## General Navigation
+
+### Landing Page
+
+![image](https://github.com/MubsPokesart/1v1-Team-Testing-Tool/assets/51163599/ae4df6f2-576c-43bb-8ccf-e129ec961a3c)
+> When you land on the page, you input your own page and select the generation of your choice. Along with that, you can choose your pool of selected replays (custom or provided), and provide certain usernames to scout if desired.
+
+### Layout Menu
+
+![image](https://github.com/MubsPokesart/1v1-Team-Testing-Tool/assets/51163599/1c11fc95-1c08-42c3-90c7-623eafaed7ad)
+> After you put in your selections, you have a list of replays to filter by and submit matchup data. The HTML from Pokemon Showdown is actually replicated to provide the in-game preview experience.
+> You select each checkbox based on whether the matchup goes in your favor (or shift-click for very ambiguous matchups, which will give you an orange checkbox) and submit by entry. Previous inputs are saved for ease of use. Form submits by a button click or a completion of filtered submissions
+
+### Results Menu
+![image](https://github.com/MubsPokesart/1v1-Team-Testing-Tool/assets/51163599/ce2b1963-ffa3-4609-a85b-e6a213dda8d8)
+> The results of your entry submissions will be shown here.
