@@ -23,7 +23,7 @@ Usage of [pkmn/ps libraries](https://github.com/pkmn/ps/blob/master/img) is also
 
 ![0](https://github.com/MubsPokesart/1v1-Team-Testing-Tool/assets/51163599/6b50142d-163e-487f-afcc-f5908111228d)
 > After you put in your selections, you have a list of replays to filter by and submit matchup data. The HTML from Pokemon Showdown is actually replicated to provide the in-game preview experience.
-> You select each checkbox based on whether the matchup goes in your favor (or shift-click for very ambiguous matchups, which will give you an orange checkbox) and submit by entry. Previous inputs are saved for ease of use. Form submits by a button click or a completion of filtered submissions
+> You select each checkbox based on whether the matchup goes in your favor (or shift-click for very ambiguous matchups, which will give you an orange checkbox) and submit by entry. Previous inputs are saved for ease of use. Form submits by a button click or completion of filtered submissions
 
 ### Results Menu
 ![0](https://github.com/MubsPokesart/1v1-Team-Testing-Tool/assets/51163599/db5fe12f-73c2-487a-bcf2-19b55a83af53)
